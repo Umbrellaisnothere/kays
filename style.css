@@ -9,13 +9,20 @@ body {
     line-height: 1.6;
 }
 
-h1 {
-    background-color: rgb(214, 21, 21);
+.welcome-message {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* position: relative; */
+}
+
+.welcome-message h1 {
+    margin: 0;
 }
 
 nav {
     background: #333;
-    color: aqua;
     padding: 10px;
 }
 
