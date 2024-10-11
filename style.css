@@ -7,13 +7,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 .welcome-message {
-    background: #4CAF50;
+    background: purple;
     color: white;
     text-align: center;
     padding: 15px;
+    border: solid #333 1px;
+    border-radius: 5px;
     /* position: relative; */
 }
 
@@ -23,22 +26,45 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 30px;
+    color: #333;
 }
 
 nav {
     background: #333;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
 }
 
 nav a {
-    color: brown;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+nav a:hover {
+    color: #8fad23;
 }
 
 section {
