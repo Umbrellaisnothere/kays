@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
@@ -68,7 +69,11 @@ nav a:hover {
 }
 
 section {
-    padding: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
 }
 
 
@@ -76,6 +81,22 @@ section {
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -84,7 +105,11 @@ section {
         align-items: center;
     }
 
-    .product {
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .item {
         text-align: center;
     }
 }
