@@ -33,7 +33,7 @@ h2 {
 
 nav {
     background: #333;
-    padding: 15px;
+    padding: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,19 +42,22 @@ nav {
     z-index: 1000;
 }
 
+nav .logo img {
+    width: 70px;
+    height: auto;
+    max-height: 80px;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 
 nav ul li {
     margin: 0 15px;
-}
-
-nav .logo {
-    color: white;
-    font-size: 24px;
 }
 
 nav a {
@@ -100,6 +103,64 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    nav .logo img {
+        width: 50px;
+    }
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+nav a:hover {
+    color: #8fad23;
+}
+
+section {
+    padding: 15px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    z-index: 1000;
+}
+}
+
+/* @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -109,7 +170,11 @@ footer p {
         margin: 10px 0;
     }
 
+    section {
+        padding: 15px;
+    }
+
     .item {
         text-align: center;
     }
-}
+} */
