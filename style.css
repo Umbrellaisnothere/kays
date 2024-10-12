@@ -37,8 +37,37 @@ body {
 .welcome-message h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    animation: fadeInText 2s ease-in;
+    animation: fadeInText 3s ease-in;
     margin: 0;
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+    animation: fadeInText 2.5s ease-in;
+}
+
+@keyframes fadeAsItSlidesUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
+
+.show-content {
+    display: block;
+    animation: contentFadeIn 1s ease-in-out;
+}
+
+@keyframes contentFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 h2 {
@@ -48,22 +77,21 @@ h2 {
 }
 
 nav {
-    background: #333;
-    padding: 13px;
+    background: rgb(34, 34, 34);
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
 }
 
 nav .logo img {
     width: 70px;
+    border-radius: 50%;
     height: auto;
     max-height: 80px;
-    border: solid black 1px;
-    border-radius: 50%;
 }
 
 nav ul {
@@ -88,14 +116,15 @@ nav a:hover {
 }
 
 section {
+    margin: auto;
+    margin-top: 20px;
     padding: 30px;
     max-width: 1200px;
-    margin: auto;
     background-color: white;
-    margin-top: 20px;
     flex-grow: 1;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
-
 
 .item {
     border: 1px solid #ddd;
@@ -110,12 +139,13 @@ section {
 }
 
 footer {
-    background: #333;
     color: white;
+    background: rgb(34, 34, 34);
     text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
+    padding: 15px;
+    /* position: relative; */
+    /* bottom: 0; */
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -181,21 +211,26 @@ footer p {
 }
 }
 
-/* @media (max-width: 600px) {
+
+/* @media (max-width: 768px) {
+    .welcome-message h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-message p {
+        font-size: 1rem;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin-bottom: 10px;
     }
 
     section {
-        padding: 15px;
-    }
-
-    .item {
-        text-align: center;
+        padding: 20px;
     }
 } */
