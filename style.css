@@ -5,10 +5,16 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
 }
 
 .welcome-message {
@@ -18,7 +24,6 @@ body {
     padding: 15px;
     border: solid #333 1px;
     border-radius: 5px;
-    /* position: relative; */
 }
 
 .welcome-message h1 {
@@ -77,6 +82,7 @@ section {
     margin: auto;
     background-color: white;
     margin-top: 20px;
+    flex-grow: 1;
 }
 
 
@@ -86,6 +92,10 @@ section {
     margin: 10px 0;
     border-radius: 5px;
     background: #fafafa;
+}
+
+.contact-info p {
+    margin: 10px 0;
 }
 
 footer {
@@ -103,10 +113,9 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    nav .logo img {
-        width: 50px;
-    }
-
+nav .logo img {
+    width: 50px;
+}
 
 nav ul {
     list-style: none;
@@ -142,6 +151,7 @@ section {
     margin: 10px 0;
     border-radius: 5px;
     background: #fafafa;
+    text-align: center;
 }
 
 footer {
