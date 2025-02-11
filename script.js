@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const welcomeMessage = document.getElementById("welcome-message");
     const mainContent = document.getElementById('main-content');
+    const year= document.querySelector("#current-year")
+
+    year.innerHTML = new Date().getFullYear()
     
     setTimeout(() => {
         welcomeMessage.style.opacity = 0;
